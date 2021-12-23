@@ -1,0 +1,28 @@
+###
+GET http://localhost:9000/profile/lemt.09@gmail.com HTTP/1.1
+
+###
+POST http://localhost:3000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "description_product": "Lirio Amarillo",
+    "unit_valor": 5000,
+    "estado": "disponible"
+}
+
+###
+DELETE http://localhost:3000/users/2 HTTP/1.1
+
+###
+PUT http://localhost:9000/users/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName": "Mr_Men09",
+    "nombre": "Luis Mendoza",
+    "rol": "Administrador",
+    "estado": "Autorizado",
+    "numTel": 3175359094,
+    "email": "lemendozat@correo.udistrital.edu.co"
+}
